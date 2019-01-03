@@ -21,7 +21,7 @@ const App = () => {
           <Route path='/' exact component={StreamList} />
           <Route path='/streams/new' component={StreamsCreate} />
           <Route path='/streams/edit' component={StreamEdit} />
-          <Route path='/streams/delete' component={StreamDelete} />
+          <Route path='/streams/delete/:id' exact component={StreamDelete} />
           <Route path='/streams/show' component={StreamShow} />
         </div>
       </BrowserRouter>
